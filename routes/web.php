@@ -76,3 +76,10 @@ Route::get('/concealer',  [MakeUpProduct::class, 'concealer']);
 Route::get('/blush',  [MakeUpProduct::class, 'blush']);
 Route::get('/foundation',  [MakeUpProduct::class, 'foundation']);
 Route::get('/brushes',  [MakeUpProduct::class, 'brush']);
+
+// Lip Product
+Route::get('/lips', [MakeUpProduct::class, 'lips']);
+Route::get('/lipPencils', [MakeUpProduct::class, 'lipPencils']);
+Route::get('/lipSticks', [MakeUpProduct::class, 'lipSticks']);
+Route::get('/lipTints', [MakeUpProduct::class, 'lipTints']);
+Route::get('/lipSets', [MakeUpProduct::class, 'lipSets']);
