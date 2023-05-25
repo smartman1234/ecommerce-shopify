@@ -56,3 +56,9 @@ Route::get('/eyes',  [MakeUpProduct::class, 'eyes']);
 Route::get('/mascara',  [MakeUpProduct::class, 'mascara']);
 Route::get('/eyeliner', [MakeUpProduct::class, 'eyeliner']);
 Route::get('/eyeshadows', [MakeUpProduct::class, 'eyeshadow']);
+
+// Skincare Product
+Route::get('/skincare',  [MakeUpProduct::class, 'skincare']);
+Route::get('/serums', [MakeUpProduct::class, 'serum']);
+Route::get('/masks', [MakeUpProduct::class, 'mask']);
+Route::get('/cleansers', [MakeUpProduct::class, 'cleanser']);
