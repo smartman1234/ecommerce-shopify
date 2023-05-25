@@ -7,6 +7,9 @@ use App\Http\Controllers\MakeUpProduct;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AdminOrderController;
+use App\Models\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,3 +100,29 @@ Route::view('/checkout',"checkout");
 
 // Sale
 Route::get('/Sale', [MakeUpProduct::class, 'sale']);
+
+// Admin
+Route::get('/addProduct', function () {
+    return view('AddProduct');
+});
+Route::post('/addProduct', [ProductController::class, 'store']);
+
+Route::get('/productTable', [MakeUpProduct::class, 'productTable']);
+Route::get('/ProductView', [ProductController::class, 'show']);
+
+Route::post('/editProduct/{productId}', [ProductController::class, 'update']);
+Route::get('/deleteProduct/{productId}', [ProductController::class, 'delete'])->name('product.delete');
+Route::get('/editProduct/{productId}', [ProductController::class, 'edit'])->name('product.edit');
+Route::get('/update/{productId}', [ProductController::class, 'update'])->name('product.update');
+Route::get('/productInfo/{id}', function ($id) {
+    $product = Product::where('productID', $id)->get();
+    $product = $product->toArray();
+    $data = compact('product');
+    return view("ProductView")->with($data);
+});
+
+
+Route::get('/orders', function () {
+    return view('OrdersTable');
+});
+Route::get('/orders', [AdminOrderController::class, 'orderTable']); 
