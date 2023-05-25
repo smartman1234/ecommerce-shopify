@@ -24,7 +24,7 @@ class CartController extends Controller
         $product->Quantity = 1;
         $product->save();
         
-        return redirect('/homepage');
+        return redirect('/cart');
     }
     public function UpdateCart()
     {
