@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\SignInController;
+use App\Http\Controllers\MakeUpProduct;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/', function () {
 
 
 
-
+// Admin
 Route::get('/login', function () {
 
     if (isset($errorStatus)) {
@@ -37,3 +38,8 @@ Route::post('/login', [SignInController::class, 'signin']);
 Route::get('/adminHomePage', function () {
     return view('AdminHomePage');
 });
+
+
+// Homepage
+Route::get('/homepage', [MakeUpProduct::class, 'homepage']);
+
