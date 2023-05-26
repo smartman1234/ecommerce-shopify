@@ -107,3 +107,8 @@ Route::post('/addProduct', [ProductController::class, 'store']);
 
 Route::get('/productTable', [MakeUpProduct::class, 'productTable']);
 Route::get('/ProductView', [ProductController::class, 'show']);
+
+Route::post('/editProduct/{productId}', [ProductController::class, 'update']);
+Route::get('/deleteProduct/{productId}', [ProductController::class, 'delete'])->name('product.delete');
+Route::get('/editProduct/{productId}', [ProductController::class, 'edit'])->name('product.edit');
+Route::get('/update/{productId}', [ProductController::class, 'update'])->name('product.update');
