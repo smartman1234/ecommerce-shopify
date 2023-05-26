@@ -75,3 +75,4 @@ Route::get('/highlighter',  [MakeUpProduct::class, 'highlighter']);
 Route::get('/concealer',  [MakeUpProduct::class, 'concealer']);
 Route::get('/blush',  [MakeUpProduct::class, 'blush']);
 Route::get('/foundation',  [MakeUpProduct::class, 'foundation']);
+Route::get('/brushes',  [MakeUpProduct::class, 'brush']);
