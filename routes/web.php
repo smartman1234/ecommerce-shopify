@@ -50,3 +50,6 @@ Route::get('/contactUs', [InformationController::class, 'contactus']);
 Route::get('/privacyPolicy', function () {
     return view('PrivacyPolicy');
 });
+
+// Eye Product
+Route::get('/eyes',  [MakeUpProduct::class, 'eyes']);
