@@ -94,3 +94,6 @@ Route::get('/update-cart', [CartController::class, 'UpdateCart']);
 // Checkout
 Route::post('checkout',  [CheckoutController::class, 'getData']);
 Route::view('/checkout',"checkout");
+
+// Sale
+Route::get('/Sale', [MakeUpProduct::class, 'sale']);
