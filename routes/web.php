@@ -62,3 +62,6 @@ Route::get('/skincare',  [MakeUpProduct::class, 'skincare']);
 Route::get('/serums', [MakeUpProduct::class, 'serum']);
 Route::get('/masks', [MakeUpProduct::class, 'mask']);
 Route::get('/cleansers', [MakeUpProduct::class, 'cleanser']);
+
+// Body Product
+Route::get('/body',  [MakeUpProduct::class, 'body']);
