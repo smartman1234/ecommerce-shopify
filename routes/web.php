@@ -6,6 +6,7 @@ use App\Http\Controllers\SignInController;
 use App\Http\Controllers\MakeUpProduct;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,5 +86,11 @@ Route::get('/lipSticks', [MakeUpProduct::class, 'lipSticks']);
 Route::get('/lipTints', [MakeUpProduct::class, 'lipTints']);
 Route::get('/lipSets', [MakeUpProduct::class, 'lipSets']);
 
-//cart routes 
+// Cart Routes 
 Route::get('/cart', [CartController::class, 'show']);
+Route::get('/add-to-cart/{productID}', [CartController::class, 'AddToCart']);
+Route::get('/update-cart', [CartController::class, 'UpdateCart']);
+
+// Checkout
+Route::post('checkout',  [CheckoutController::class, 'getData']);
+Route::view('/checkout',"checkout");
