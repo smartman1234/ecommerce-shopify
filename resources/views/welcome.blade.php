@@ -13,7 +13,7 @@
     <div class="Section_top">
         <div class="content">
             <h1>Ecommerce Shopify</h1>
-            <a href="/hompage">Explore Us</a>
+            <a href="/homepage">Explore Us</a>
             <br>
             <br>
             <a href="/login">Continue as Admin</a>
