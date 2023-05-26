@@ -53,3 +53,4 @@ Route::get('/privacyPolicy', function () {
 
 // Eye Product
 Route::get('/eyes',  [MakeUpProduct::class, 'eyes']);
+Route::get('/mascara',  [MakeUpProduct::class, 'mascara']);
