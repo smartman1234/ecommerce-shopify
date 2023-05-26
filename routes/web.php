@@ -79,3 +79,4 @@ Route::get('/brushes',  [MakeUpProduct::class, 'brush']);
 
 // Lip Product
 Route::get('/lips', [MakeUpProduct::class, 'lips']);
+Route::get('/lipPencils', [MakeUpProduct::class, 'lipPencils']);
