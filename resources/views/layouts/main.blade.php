@@ -1,5 +1,5 @@
 @include('layouts.header')
 
-@yield('main-section')
+    @yield('content')
 
 @include('layouts.footer')

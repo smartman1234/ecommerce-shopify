@@ -1,4 +1,5 @@
-</body>
+
+</section>
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -18,4 +19,7 @@
     crossorigin="anonymous"></script>
 <script src="{{ URL::asset('js/vanilla-tilt.js') }}"></script>
 <script src="{{ URL::asset('js/app.js') }}"></script>
+
+</body>
+
 </html>

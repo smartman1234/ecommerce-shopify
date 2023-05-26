@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    @stack('title')
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font -->
@@ -23,9 +25,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link of External Style Sheet -->
-    @stack('css')
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
       <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c604ef251a.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
+</head>

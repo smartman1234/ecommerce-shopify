@@ -1,5 +1,5 @@
 
-    @extends('layouts.main')
+@extends('layouts.main2')
     @push('title')
     <title>Landing Page</title>
     @endpush
@@ -12,11 +12,11 @@
 
     <div class="Section_top">
         <div class="content">
-            <h1> Shopify Ecommerce</h1>
-            <a href="/">Explore Us</a>
+            <h1>Ecommerce Shopify</h1>
+            <a href="/hompage">Explore Us</a>
             <br>
             <br>
-            <a href="/">Continue as Admin</a>
+            <a href="/login">Continue as Admin</a>
         </div>
     </div>
 
