@@ -46,3 +46,4 @@ Route::get('/homepage', [MakeUpProduct::class, 'homepage']);
 
 // Contact
 Route::get('/AboutUs', [InformationController::class, 'aboutus']);
+Route::get('/contactUs', [InformationController::class, 'contactus']);
