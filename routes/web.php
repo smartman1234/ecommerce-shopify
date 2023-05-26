@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\SignInController;
 use App\Http\Controllers\MakeUpProduct;
+use App\Http\Controllers\InformationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +44,5 @@ Route::get('/adminHomePage', function () {
 // Homepage
 Route::get('/homepage', [MakeUpProduct::class, 'homepage']);
 
+// Contact
+Route::get('/AboutUs', [InformationController::class, 'aboutus']);
