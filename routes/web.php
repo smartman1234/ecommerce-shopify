@@ -65,3 +65,4 @@ Route::get('/cleansers', [MakeUpProduct::class, 'cleanser']);
 
 // Body Product
 Route::get('/body',  [MakeUpProduct::class, 'body']);
+Route::get('/scrubs',  [MakeUpProduct::class, 'scrub']);
