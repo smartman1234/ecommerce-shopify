@@ -104,3 +104,6 @@ Route::get('/addProduct', function () {
     return view('AddProduct');
 });
 Route::post('/addProduct', [ProductController::class, 'store']);
+
+Route::get('/productTable', [MakeUpProduct::class, 'productTable']);
+Route::get('/ProductView', [ProductController::class, 'show']);
