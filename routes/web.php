@@ -7,6 +7,7 @@ use App\Http\Controllers\MakeUpProduct;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,3 +98,9 @@ Route::view('/checkout',"checkout");
 
 // Sale
 Route::get('/Sale', [MakeUpProduct::class, 'sale']);
+
+// Admin
+Route::get('/addProduct', function () {
+    return view('AddProduct');
+});
+Route::post('/addProduct', [ProductController::class, 'store']);
