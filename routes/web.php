@@ -93,6 +93,7 @@ Route::get('/lipSets', [MakeUpProduct::class, 'lipSets']);
 Route::get('/cart', [CartController::class, 'show']);
 Route::get('/add-to-cart/{productID}', [CartController::class, 'AddToCart']);
 Route::get('/update-cart', [CartController::class, 'UpdateCart']);
+Route::get('/remove-cart', [CartController::class, 'RemoveCart']);
 
 // Checkout
 Route::post('checkout',  [CheckoutController::class, 'getData']);
