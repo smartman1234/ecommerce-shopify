@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SignInController;
 use App\Http\Controllers\MakeUpProduct;
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,3 +84,6 @@ Route::get('/lipPencils', [MakeUpProduct::class, 'lipPencils']);
 Route::get('/lipSticks', [MakeUpProduct::class, 'lipSticks']);
 Route::get('/lipTints', [MakeUpProduct::class, 'lipTints']);
 Route::get('/lipSets', [MakeUpProduct::class, 'lipSets']);
+
+//cart routes 
+Route::get('/cart', [CartController::class, 'show']);
